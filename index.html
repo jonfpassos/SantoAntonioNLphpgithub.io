@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Santo Antônio Morro Velho</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link type="text/css" real="stylesheet" media="all" href="index.css">
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #eafafa;
+    color: #fff;
+    padding: 70px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: lightgrey;
+  }
+  .logo-small {
+    color: #32cdcd;
+    font-size: 50px;
+  }
+  .logo {
+    color: #32cdcd;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: black;
+  }
+  .carousel-indicators li {
+    border-color: black;
+  }
+  .carousel-indicators li.active {
+    background-color: black;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #28a4a4; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid#32cdcd;
+    background-color: #fff !important;
+    color: #32cdcd;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #28a4a4 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #28a4a4;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #145252;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color:#28a4a4 !important;
+    background-color: lightgrey !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #28a4a4;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  div.a{
+    margin: 2%;
+    background-color: #ffffff;
+    
+    opacity: 0.6;
+  }
+  div.a p{
+    margin: 1%;
+    font-weight: bold;
+    color: #000000;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Santo Antônio Morro Velho</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#Videos">Videos</a></li>
+        <li><a href="#Contatos">Contatos</a></li>
+        <li><a href="#Maps">Mapa</a></li>
+        <!--<li><a href="#contact">CONTACT</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <br><div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <samp><img class="d-block sw-100" src="IMGs/Igreja.jpeg " alt="First slide" style="width:80%;"></samp>
+        <div class="carousel-caption" > 
+          <div class="a" >
+            <h3>Los Angeles</h3>
+            <p>LA is always so much fun!</p>
+        </div>
+        </div>
+      </div>
+    <div class="item">
+        <samp><img class="d-block w-100" src="IMGs/Aviso.jpeg" alt="Second slide" style="width: 35%;"></samp>
+    </div>
+    <div class="item">
+        <samp><img class="d-block w-100" src="IMGs/Videos/Capa 20_04_2021.jpg" alt="Third slide" style="width: 65%;" ></samp>
+    </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <!--<div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>-->
+    <div class="col-sm-8">
+      <h2>Sobre</h2><br>
+      <h4><strong> Igreja Matriz de Santo Antônio de Morro Velho, localizada no Bairro Retiro, na cidade de Nova Lima, em Minas Gerais.</strong>
+        <br>Atualmente a Igreja está passando por uma reforma, teve suas obras interrompidas durante os meses 
+        de março a outubro de 2020, devido a Pandemia, 
+        mas com ajuda de Deus e a generosidade de seus paroquianos as obras foram retomadas neste mesmo ano.</h4><br>
+    </div>
+    <div class="Col-sm-4">
+      <br><br><br>
+      <span> <img src="IMGs/Igreja.jpeg" class="img-thumbnail" alt="Cinque Terre" style="width: 33%; height: 205px;"> </span>  
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div class="container-fluid">
+  <div class="container- fluid bg-grey" style="background-color: #eafafa;">
+<div id="Videos" class="container-fluid text-center">
+  <h2>Videos</h2>
+  <h4>Principais Videos e Playlist do canla do YouTube</h4> 
+  <p><button class="btn btn-lg"><a href="videos.html"> Para assistir mais vídeos clique aqui</a></button><p>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span ><img class="img-thumbnail" src="IMGs/Videos/Capa 20_04_2021.jpg" style="width: 80%;"></span>
+      <h4> 3ª-feira da 6ª Semana da Páscoa - 11/05/2021</h4>
+      <p><button class="btn btn-lg" ><a href="https://youtu.be/jomYCt0bu5A" target="_blank">Clique aqui para assistir</a></button></p>
+    </div>
+    <div class="col-sm-4">
+      <span ><img class="img-thumbnail" src="IMGs/Videos/Reflexão da Palavra de Deus.jpg" style="width: 80%;"></span>
+      <h4>Reflexão da Palavra de Deus - Domingo Ascensão do Senhor - 16/05/2021</h4>
+      <p><button class="btn btn-lg"><a href="https://youtu.be/3sEAuAZPU5c" target="_blank">Clique aqui para assistir</a></button></p>
+    </div>
+    <div class="col-sm-4">
+      <span ><img class="img-thumbnail" src="IMGs/Videos/Reflexão da Palavra de Deus.jpg" style="width: 80%;"></span>
+      <h4>Reflexão da Palavra de Deus - Domingo Ascensão do Senhor - 16/05/2021</h4>
+      <p><button class="btn btn-lg"><a href="https://youtu.be/3sEAuAZPU5c" target="_blank">Clique aqui para assistir</a></button></p>
+    </div>
+  </div> 
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span ><img class="img-thumbnail" src="IMGs/Videos/Reflexão da Palavra de Deus.jpg" style="width: 80%;"></span>
+      <h4>Reflexão da Palavra de Deus - Domingo Ascensão do Senhor - 16/05/2021</h4>
+      <p><button class="btn btn-lg"><a href="https://youtu.be/3sEAuAZPU5c" target="_blank">Clique aqui para assistir</a></button></p>
+    </div>
+    <div class="col-sm-4">
+      <span ><img class="img-thumbnail" src="IMGs/Videos/Reflexão da Palavra de Deus.jpg" style="width: 80%;"></span>
+      <h4>Reflexão da Palavra de Deus - Domingo Ascensão do Senhor - 16/05/2021</h4>
+      <p><button class="btn btn-lg"><a href="https://youtu.be/3sEAuAZPU5c" target="_blank">Clique aqui para assistir</a></button></p>
+    </div>
+    <div class="col-sm-4">
+      <span ><img class="img-thumbnail" src="IMGs/Videos/Reflexão da Palavra de Deus.jpg" style="width: 80%;"></span>
+      <h4>Reflexão da Palavra de Deus - Domingo Ascensão do Senhor - 16/05/2021</h4>
+      <p><button class="btn btn-lg"><a href="https://youtu.be/3sEAuAZPU5c" target="_blank">Clique aqui para assistir</a></button></p>
+    </div>
+  </div>
+</div> 
+  </div>
+</div>
+
+<br>
+
+<!-- Container (Pricing Section) -->
+<div id="Contatos" class="container-fluid">
+  <div class="text-center">
+    <h2>Contatos</h2>
+    <h4>Principais contatos</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Secretarai</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong></strong></p>
+          <p><strong><h4 style="color: slategrey;">Telefone:</strong>  (31) 3541-1227</h4></p>
+          <p><strong><h4 style="color: slategrey;">Horario:</strong> Segunda a Sexta 08:00 as 17:00</h4></p>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Meios de comunicação online</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong><h4 style="color: slategrey;">YouTube:</h4></strong><a href="https://www.youtube.com/c/SantoAntonioRetiroNovaLima"><button class="btn btn-lg"> Clique aqui para acessar</button></a></p>
+          <p><strong><h4 style="color: slategrey;">Facebook</h4></strong><a href="https://www.youtube.com/c/SantoAntonioRetiroNovaLima"><button class="btn btn-lg"> Clique aqui para acessar</button></a></p>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pastorais</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong><h4 style="color: slategrey;">Para ver os contatos das pastorais clique no botão a baixo</h4></strong><a href="pastorasis.hmtl"><button class="btn btn-lg"> Clique aqui para acessar</button</p>
+        </div>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<div id="Maps" class="container-fluid text-center">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14998.435934122299!2d-43.8578705!3d-19.9829399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1f0444d64faa726!2sPar%C3%B3quia%20de%20Santo%20Ant%C3%B4nio%20do%20Morro%20Velho%20-%20Nova%20Lima!5e0!3m2!1spt-BR!2sbr!4v1621289807710!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<!-- Container (Contact Section) -->
+<!--<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<!-- Image of location/map -->
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p><a href="" title="Visit w3schools"></a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
