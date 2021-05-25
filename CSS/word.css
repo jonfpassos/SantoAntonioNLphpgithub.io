@@ -1,0 +1,82 @@
+
+.cit_direita_italico{
+    text-align: right;
+    font-style: italic;
+    font-size: 12pt;
+}
+
+.cit_direita{
+    text-align: right;
+    margin: 8pt 0pt 15pt 0pt;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.italico{
+    font-style: italic;
+
+}
+
+.tabulacao{
+    text-indent: 0pt;
+    margin-left: 30pt
+}
+
+.tab_num{
+    margin-left: 22pt
+}
+
+.tab_num2{
+    margin-left: 15pt
+}
+
+.tab_num3{
+    margin-left: 15pt;
+}
+.refrao_salmo{
+    font-weight: bold;
+    margin-left: 20pt;
+}
+
+/*body {
+    background-color: #FFFFFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    scrollbar-3dlight-color: #F0F0EE;
+    scrollbar-arrow-color: #676662;
+    scrollbar-base-color: #F0F0EE;
+    scrollbar-darkshadow-color: #DDDDDD;
+    scrollbar-face-color: #E0E0DD;
+    scrollbar-highlight-color: #F0F0EE;
+    scrollbar-shadow-color: #F0F0EE;
+    scrollbar-track-color: #F5F5F5;
+}*/
+
+p {margin:0; padding:0;}
+
+td {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+pre {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+thead {
+    background-color: #FFBBBB;
+}
+
+tfoot {
+    background-color: #BBBBFF;
+}
+
+th {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}/**/
+
+
