@@ -1,0 +1,1 @@
+<?php delete("tblcategoria", "ID_Categoria", $explode['1'], "admin/gerenciar-categorias/");?>
